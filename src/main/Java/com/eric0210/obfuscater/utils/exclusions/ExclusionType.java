@@ -1,0 +1,29 @@
+package com.eric0210.obfuscater.utils.exclusions;
+
+public enum ExclusionType
+{
+	GLOBAL,
+	EXTENDS, // TODO
+	IMPLEMENTS, // TODO
+	STRING_ENCRYPTION,
+	REFERENCE_OBFUSCATION,
+	FLOW_OBFUSCATION,
+	NUMBER_OBFUSCATION,
+	LINE_NUMBERS,
+	LOCAL_VARIABLES,
+	HIDE_CODE,
+	CRASHER,
+	EXPIRATION,
+	OPTIMIZER,
+	SHRINKER,
+	SHUFFLER,
+	RENAMER,
+	ANTI_TAMPER,
+	RESOURCE_ENCRYPTION,
+	RESOURCE_RENAMER;
+
+	public String getName()
+	{
+		return this.name().toLowerCase();
+	}
+}
